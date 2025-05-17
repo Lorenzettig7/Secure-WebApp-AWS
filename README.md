@@ -5,13 +5,21 @@ This project deploys a secure, cloud-based web application environment using Ter
 Structure
 
 alb.tf -Application Load Balancer setup
+
 attach.tf - Attaches WAF to the ALB
+
 main.tf - VPC, subnets, NAT, IGW, security groups
+
 outputs.tf - Terraform output variables
+
 terraform.tfstate - Terraform state file 
+
 terraform.tfstate.backup - State file backup
+
 terraform.tfvars -Custom variable values
+
 variables.tf - Input variable declarations
+
 waf.tf - WAF ACL 
 
  Features
