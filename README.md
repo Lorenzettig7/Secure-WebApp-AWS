@@ -1,6 +1,6 @@
  Secure-WebApp-AWS
 
-This project deploys a secure, cloud-based web application environment using Terraform on AWS with an Application Load Balancer (ALB), Web Application Firewall (WAF), and simulated AI integration.
+This project deploys a secure, cloud-based web application environment using Terraform on AWS with an Application Load Balancer (ALB),and Web Application Firewall (WAF)
 
 Structure
 
@@ -32,9 +32,6 @@ An EC2 instance running NGINX was launched in the public subnet and registered w
 
 AWS WAF using managed rule setsn
 Defined in waf.tf, the Web ACL uses AWS-managed rule groups and is associated with the ALB through attach.tf.
-
-Simulated AI detection using a Python-based script
-A custom Python script (sagemaker_sim.py) mimics AI-based classification of suspicious User-Agent headers, representing a SageMaker workflow.
 
 Fully managed using Infrastructure as Code (Terraform)
 All AWS resources were declared, provisioned, and linked using modular .tf files and applied via Terraform CLI.
